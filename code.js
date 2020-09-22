@@ -5,7 +5,7 @@ let game = document.querySelector('.game'),
 	step = false,
 	count = 0,
 	circle =
-		'<svg class="circle"><circle r="65" cx="98" cy="98" stroke="yellow" stroke-width="10" fill="none" stroke-linecap="round" /></svg>',
+		'<svg class="circle"><circle r="65" cx="98" cy="98" stroke="yellow" stroke-width="10" fill="none" stroke-linecap="round"  /></svg>',
 	cross =
 		'<svg class="cross"><line class="first" x1="40" y1="40" x2="160" y2="160" stroke="red" stroke-width="10" fill="none" stroke-linecap="round"/><line class="second" x1="160" y1="40" x2="40" y2="160" stroke="red" stroke-width="10" fill="none" stroke-linecap="round"/></svg>';
 
