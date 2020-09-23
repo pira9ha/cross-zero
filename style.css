@@ -90,3 +90,18 @@ body {
 		stroke-dashoffset: 0;
 	}
 }
+
+@media screen and (max-width: 560px) {
+	.name {
+		font-size: 2em;
+	}
+
+	.game {
+		width: 300px;
+		height: 300px;
+	}
+	.game-area {
+		width: 100px;
+		height: 100px;
+	}
+}

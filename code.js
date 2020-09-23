@@ -77,11 +77,29 @@ function winner() {
 			}, 1300);
 			game.removeEventListener('click', init);
 		} else if (count == 9) {
-			result.innerText = 'Ничья';
-			game.removeEventListener('click', init);
+			setTimeout(() => {
+				result.innerText = 'Ничья';
+				game.removeEventListener('click', init);
+			}, 1000);
 		}
 	}
 }
 
 btnGame.addEventListener('click', newGame);
 game.addEventListener('click', init);
+
+// адаптив svg
+const mediaQuery = window.matchMedia('(max-width: 560px)');
+function handleTabletChange(e) {
+	if (e.matches) {
+		circle =
+			'<svg class="circle"><circle r="30" cx="48" cy="48" stroke="yellow" stroke-width="10" fill="none" stroke-linecap="round"  /></svg>';
+		cross =
+			'<svg class="cross"><line class="first" x1="20" y1="20" x2="80" y2="80" stroke="red" stroke-width="10" fill="none" stroke-linecap="round"/><line class="second" x1="80" y1="20" x2="20" y2="80" stroke="red" stroke-width="10" fill="none" stroke-linecap="round"/></svg>';
+
+		btnGame.addEventListener('click', newGame);
+		game.addEventListener('click', init);
+	}
+}
+mediaQuery.addListener(handleTabletChange);
+handleTabletChange(mediaQuery);
