@@ -67,13 +67,13 @@ body {
 .first {
 	stroke-dasharray: 200;
 	stroke-dashoffset: 200;
-	animation: draw 0.5s forwards;
+	animation: draw 0.4s forwards;
 }
 
 .second {
 	stroke-dasharray: 200;
 	stroke-dashoffset: 200;
-	animation: draw 0.5s 0.5s forwards;
+	animation: draw 0.4s 0.4s forwards;
 }
 
 .circle {
@@ -82,7 +82,7 @@ body {
 	height: 100%;
 	stroke-dasharray: 408;
 	stroke-dashoffset: 408;
-	animation: draw 1s forwards;
+	animation: draw 0.8s forwards;
 }
 
 @keyframes draw {
@@ -100,6 +100,7 @@ body {
 		width: 300px;
 		height: 300px;
 	}
+
 	.game-area {
 		width: 100px;
 		height: 100px;

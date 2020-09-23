@@ -62,7 +62,7 @@ function winner() {
 				area[combination[i][1]].classList.add('active');
 				area[combination[i][2]].classList.add('active');
 				result.innerText = 'Выйграли крестики';
-			}, 1300);
+			}, 800);
 			game.removeEventListener('click', init);
 		} else if (
 			area[combination[i][0]].classList.contains('o') &&
@@ -74,13 +74,13 @@ function winner() {
 				area[combination[i][1]].classList.add('active');
 				area[combination[i][2]].classList.add('active');
 				result.innerText = 'Выйграли нолики';
-			}, 1300);
+			}, 800);
 			game.removeEventListener('click', init);
 		} else if (count == 9) {
 			setTimeout(() => {
 				result.innerText = 'Ничья';
 				game.removeEventListener('click', init);
-			}, 1000);
+			}, 600);
 		}
 	}
 }
